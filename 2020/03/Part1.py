@@ -21,6 +21,6 @@ def traverse_map(right: int, down: int, map_array: list) -> int:
         x += right
 
     return encountered_trees
-    
-   
+
+
 print(traverse_map(3, 1, content))
