@@ -61,9 +61,7 @@ public class Part2 {
 
         StringBuilder res = new StringBuilder();
 
-        for (String allergen : allergens) {
-            res.append(contains.get(allergen)).append(",");
-        }
+        allergens.forEach(s -> res.append(contains.get(s)).append(","));
 
         System.out.println(res.substring(0, res.length() - 1));
 
